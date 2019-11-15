@@ -1,1 +1,6 @@
 site/
+build_image.ps1
+run_container.ps1
+README.md
+LICENSE
+.gitignore
