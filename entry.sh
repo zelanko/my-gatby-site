@@ -13,7 +13,7 @@ else
   if [ ! -e "$GATSBY_DIR/node_modules/" ]
   then
     echo "Node modules is empty. Running npm install..."
-    npm installgit
+    npm install git
     # Peer dependencies
     npm install \
       eslint-plugin-jsx-a11y@6.x \

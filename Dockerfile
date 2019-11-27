@@ -2,8 +2,8 @@ FROM node:12-alpine
 
 RUN apk update && \
     apk upgrade && \
-    apk add vips-tools vips-dev fftw-dev gcc g++ make libc6-compat git python \
-        # Dependecies of NPM 
+    apk add vips-tools vips-dev fftw-dev gcc g++ make libc6-compat git python util-linux \
+        # Dependecies of NPM
         glu libxi autoconf \
         --repository https://dl-3.alpinelinux.org/alpine/edge/community/ \
         --repository https://dl-3.alpinelinux.org/alpine/edge/main && \

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "my-gatsby-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal site with gatsbyjs",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ari Zelanko <zelanko@gmail.com>",
   "dependencies": {
     "eslint": "^6.6.0",
     "eslint-plugin-import": "^2.18.2",
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/zelanko/my-gatby-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/zelanko/my-gatby-site/issues"
   }
 }
