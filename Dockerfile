@@ -1,14 +1,18 @@
 FROM node:12-alpine
 
 RUN apk update && \
-    apk upgrade && \
-    apk add vips-tools vips-dev fftw-dev gcc g++ make libc6-compat git python util-linux \
+    apk upgrade --no-cache
+RUN apk add --no-cache vips-tools vips-dev fftw-dev gcc g++ make libc6-compat git python \
         # Dependecies of NPM
-        glu libxi autoconf \
+        util-linux automake glu libxi autoconf \
         --repository https://dl-3.alpinelinux.org/alpine/edge/community/ \
-        --repository https://dl-3.alpinelinux.org/alpine/edge/main && \
-    rm -rf /var/cache/apk/* && \
-    npm install --global  --no-optional \
+        --repository https://dl-3.alpinelinux.org/alpine/edge/main
+RUN apk add --no-cache openssh openrc
+RUN rc-update add sshd
+RUN rc-status
+RUN /etc/init.d/sshd start
+RUN rm -rf /var/cache/apk/*
+RUN npm install --global  --no-optional \
         gatsby \
         react@^16.11.0 \
         react-dom@^16.11.0 \
@@ -20,10 +24,10 @@ COPY entry.sh /
 
 RUN dos2unix /entry.sh && chmod +x /entry.sh
 
-VOLUME /site
+# VOLUME /site
 
 WORKDIR /site
 
-EXPOSE 8000
+EXPOSE 8000 22
 
 ENTRYPOINT ["/entry.sh"]
