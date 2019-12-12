@@ -1,10 +1,15 @@
 #!/bin/sh
 set -e
 
+export CHOKIDAR_USEPOLLING=1
+export PORT=8000
+export HOST="0.0.0.0"
+export PACKAGE_MGR="yarn"
+
 export GATSBY_DIR="/site"
 # export PATH="$PATH:/usr/local/bin/gatsby"
 
-# Initialize Gatsby or run NPM install if needed
+# Initialize Gatsby or run $PACKAGE_MGR install if needed
 if [ ! -f "$GATSBY_DIR/package.json" ]
 then
   echo "Initializing Gatsby..."
@@ -12,36 +17,30 @@ then
 else
   if [ ! -e "$GATSBY_DIR/node_modules/" ]
   then
-    echo "Node modules is empty. Running npm install..."
-    npm install git
+    echo "Node modules is empty. Running $PACKAGE_MGR install..."
+    $PACKAGE_MGR install
     # Peer dependencies
-    npm install \
-      eslint-plugin-jsx-a11y@6.x \
-      eslint-plugin-react@7.x \
-      eslint@^6.0.0 \
-      express@^4.16.2 \
-      typescript \
-      ink@^2.0.0 \
   fi
 fi
 
+npx gatsby develop --host $HOST --port $PORT
+
 # Decide what to do
-if  [ "$1" == "develop" ]
-then
-  rm -rf $GATSBY_DIR/public
-  gatsby develop --host 0.0.0.0 --port 8000
+# if  [ "$1" == "develop" ]
+# then
+#   rm -rf $GATSBY_DIR/public
+#   gatsby develop --host $HOST --port $PORT
+# elif  [ "$1" == "build" ]
+# then
+#   rm -rf $GATSBY_DIR/public
+#   gatsby build
+# elif  [ "$1" == "stage" ]
+# then
+#   rm -rf $GATSBY_DIR/public
+#   gatsby build
+#   gatsby serve --host $HOST --port $PORT
 
-elif  [ "$1" == "build" ]
-then
-  rm -rf $GATSBY_DIR/public
-  gatsby build
-elif  [ "$1" == "stage" ]
-then
-  rm -rf $GATSBY_DIR/public
-  gatsby build
-  gatsby serve --host 0.0.0.0 --port 8000
-
-else
-  exec $@
-fi
-fi
+# else
+#   exec $@
+# fi
+# fi
