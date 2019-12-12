@@ -8,12 +8,9 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to my new Gatsby site.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/" onClick="{function(){alert('hi');}()}">Go to page 2</Link>
+    <h1>Hi people. I am Ari.</h1>
+    <p>Welcome to my new Gatsby site!</p>
+    <Link to="/page-2/" onClick="{function(){alert('hi');}}">Go to page 2</Link>
   </Layout>
 )
 
