@@ -6,6 +6,8 @@ Under development
 
 https://arizelanko.netlify.com/
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91625085-2661-4092-bc04-5a15c09aa63f/deploy-status)](https://app.netlify.com/sites/arizelanko/deploys)
+
 ## How is it built?
 
 I am using [gatsbyjs](https://github.com/gatsbyjs/gatsby) which uses [reactjs](https://github.com/facebook/react) heavily.
