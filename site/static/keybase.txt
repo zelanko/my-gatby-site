@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ari_zelanko
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://arizelanko.netlify.com
+  * I am ari_zelanko (https://keybase.io/ari_zelanko) on keybase.
+  * I have a public key ASD-LZ1luf21hkTXvFV51iJDemNmbw_zjfWmQa_Y-1DgyQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201dcb3818227da4acbf09d3a116a04aa83091e359a19042fc54b3b2475d7a1d840a",
+      "host": "keybase.io",
+      "kid": "0120fe2d9d65b9fdb58644d7bc5579d622437a63666f0ff38df5a641afd8fb50e0c90a",
+      "uid": "cf86051d6300d7a73f794b5f6e35d219",
+      "username": "ari_zelanko"
+    },
+    "merkle_root": {
+      "ctime": 1577501638,
+      "hash": "a361a93c90692fc96e4e54f8cecf1e101da4a981d67cb3ce78367c47b871e60b9d74843e377c0fc0ff11f7bf1a2f1a53902f071346fb9c9038589c0475eb8888",
+      "hash_meta": "b567de81c32571e860dc05619f3b8b6dd7aa6300cb66cd74a7f73337f0a0e4e9",
+      "seqno": 13984865
+    },
+    "service": {
+      "entropy": "+n7JAKVUlRmGB5Ya3IGWOTqo",
+      "hostname": "arizelanko.netlify.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1577501653,
+  "expire_in": 504576000,
+  "prev": "4748bc2634c9a41c7717f39c778927552a342b4028efb082fd336179cd0b594e",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/i2dZbn9tYZE17xVedYiQ3pjZm8P8431pkGv2PtQ4MkKp3BheWxvYWTESpcCDMQgR0i8JjTJpBx3F/Ocd4knVSo0K0Ao77CC/TNhec0LWU7EIJgluE/IPes0RE8dXzWQcMZN8+ZF31gA0xJIlHZAroB6AgHCo3NpZ8RA4MLx/tiH1D4TwgfiAknQ0oQg08LGGb1syyVvuMB2iQ3WwNqZdNwgLbK/PHRtqCMvvzE8OauNL95txBage5X8CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBf+Gyuv/dbAD4D7OvfizoGfMeqzv6l8YOrObkqo52jgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ari_zelanko
+
+==================================================================
