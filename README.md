@@ -4,7 +4,7 @@ Under development
 
 ## But where can we see it?
 
-I'll post a link soon.
+https://arizelanko.netlify.com/
 
 ## How is it built?
 
