@@ -15,6 +15,12 @@
         "script": "develop",
         "path": "site/",
         "group": "none"
+      },
+      {
+        "type": "npm",
+        "script": "serve",
+        "path": "site/",
+        "problemMatcher": []
       }
     ]
 }
