@@ -5,14 +5,13 @@ module.exports = {
     author: `@ari_zelanko`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        trackingId: "UA-155092329-1",
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -26,8 +25,6 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
